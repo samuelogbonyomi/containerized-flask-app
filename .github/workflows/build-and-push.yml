@@ -22,6 +22,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: flask/app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/flask-app:latest
 
 
